@@ -94,6 +94,21 @@ class MenuController extends BaseController
      */
 
     public function getMenuItems() {
-        throw new \Exception('implement in coding task 3');
+        $menu = MenuItem::all();
+        $exp = '';
+        $i = 0;
+        foreach($menu as $key => $value)
+        {
+            $exp = explode('/',$value->url);
+            foreach($exp as $key2=>$value2)
+            {
+                if($value->url == $value2)
+                {
+                    
+                }
+            }
+
+        }
+
     }
 }
